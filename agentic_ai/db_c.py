@@ -6,8 +6,8 @@ conn_obj=mysql.connector.connect(
     database=st.secrets["database"],
     port=st.secrets["port"],
     user=st.secrets["user"],
-    password=st.secrets["password"]
-    ssl_ca =st.secrets[""]
+    password=st.secrets["password"],
+    ssl_ca ="ca.pem"
 )
 
 cursor_obj=conn_obj.cursor(dictionary=True)
