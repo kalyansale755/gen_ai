@@ -3,7 +3,7 @@ from agentic_ai.db_c import cursor_obj, conn_obj
 import cloudinary
 import cloudinary.uploader
 st.title("Media Platform")
-
+st.write("app started")
 cloudinary.config(
     cloud_name=st.secrets["cloud_name"],
     api_key=st.secrets["api_key"],
